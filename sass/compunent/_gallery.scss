@@ -1,0 +1,10 @@
+.gallery {
+    display: flex;
+
+    &-img {
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}

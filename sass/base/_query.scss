@@ -1,0 +1,80 @@
+/* 576px => 36em => X-Small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 13.02083vw;
+    }
+}
+
+@media (max-width: 576px) {
+
+    :root {
+        --width-container: 3rem
+    }
+    html {
+        font-size: 26.66667vw;
+    }
+
+    body {
+        align-items: flex-start;
+    }
+
+    .header {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+
+        &_search {
+            order: 3;
+            width: 100%;
+
+            &-input {
+                width: 100%;
+
+            }
+        }
+
+        &_control {
+
+
+            @mixin control_icon {
+                width: 0.5rem;
+            }
+
+            @mixin control_notiAndchat {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                transition: all .2s;
+                cursor: pointer;
+            }
+
+            &_notification {
+                @include control_notiAndchat;
+
+                &:hover {
+                    background-color: var(--color-Grey-light-4);
+                }
+
+                &-icon {
+                    @include control_icon;
+                }
+            }
+
+            &_chat {
+                @include control_notiAndchat;
+
+                &:hover {
+                    background-color: var(--color-Grey-light-4);
+                }
+
+                &-icon {
+                    @include control_icon;
+                }
+
+            }
+        }
+    }
+}

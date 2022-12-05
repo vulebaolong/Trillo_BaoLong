@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+
+            <div class="header_logo">
+                <img src="./img/logo.png" alt="header logo">
+            </div>
+
+            <div class="header_search">
+                <input class="header_search-input" type="text" placeholder="Search hotels">
+                <svg class="header_search-icon">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </div>
+
+            <div class="header_control">
+                <div class="header_control_notification">
+                    <svg class="header_control_notification-icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="header_control_notification-value">8</span>
+                </div>
+                <div class="header_control_chat">
+                    <svg class="header_control_chat-icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="header_control_chat-value">8</span>
+                </div>
+                <div class="header_control_user">
+                    <div class="header_control_user-img">
+                        <img class="header_control_user-img" src="./img/user.jpg" alt="user">
+                    </div>
+                    <div class="header_control_user-name">
+                        <span>jonas</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="body">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-btn" href="#">
+                            <svg class="nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span class="nav-text">hotel</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-btn" href="#">
+                            <svg class="nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-light-up"></use>
+                            </svg>
+                            <span class="nav-text">flight</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-btn" href="#">
+                            <svg class="nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span class="nav-text">carrental</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-btn" href="#">
+                            <svg class="nav-icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span class="nav-text">tour</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <div class="gallery">
+                    <div class="gallery-img">
+                        <img src="./img/hotel-1.jpg" alt="hotel-1">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="./img/hotel-2.jpg" alt="hotel-2">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="./img/hotel-3.jpg" alt="hotel-3">
+                    </div>
+                </div>
+
+                <div class="review">
+                    <h3 class="review-text">HOTEL LAS PALMAS</h3>
+                    <div class="review-star">
+                        <div class="review-star-item">
+                            <svg class="review-star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <div class="review-star-item">
+                            <svg class="review-star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <div class="review-star-item">
+                            <svg class="review-star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <div class="review-star-item">
+                            <svg class="review-star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <div class="review-star-item">
+                            <svg class="review-star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="review-location">
+                        <svg class="review-location-icon">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <div class="review-location-text">
+                            Albufeira, Portugal
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <div class="review-rating-point">8.6</div>
+                        <div class="review-rating-vote">429 votes</div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

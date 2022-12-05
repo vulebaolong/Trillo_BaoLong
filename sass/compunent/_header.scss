@@ -1,0 +1,152 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    padding: 0 0.2rem;
+    justify-content: space-between;
+    // height: 0.8rem;
+    background-color: white;
+
+    &_logo {
+        width: 0.5rem;
+        height: 0.5rem;
+        margin: 0.05rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &_search {
+        display: flex;
+        align-items: center;
+
+        &-input {
+            padding: 0.1rem 0.2rem;
+            width: 4rem;
+            height: 0.32rem;
+            outline: none;
+            border-radius: 1000rem;
+            border: none;
+            background-color: var(--color-Grey-light-2);
+            margin-right: -0.35rem;
+            transition: all .2s;
+            font-size: 0.15rem;
+            font-family: inherit;
+            color: var(--color-Grey-dark-2);
+
+
+            &:focus {
+                width: 5rem;
+            }
+
+            &::placeholder {
+                color: var(--color-Grey-light-4);
+                font-family: inherit;
+            }
+        }
+
+        &-icon {
+            width: 0.2rem;
+            height: 0.2rem;
+            fill: var(--color-Grey-dark-3);
+        }
+    }
+
+    &_control {
+        display: flex;
+
+        @mixin control_value {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.1rem;
+            background-color: var(--color-Primary);
+            width: 0.2rem;
+            height: 0.2rem;
+            border-radius: 50%;
+            color: white;
+            position: absolute;
+            top: 13px;
+            left: 50%;
+        }
+
+        @mixin control_icon {
+            width: 0.8rem;
+            height: 0.25rem;
+            fill: var(--color-Grey-dark-2);
+        }
+
+        @mixin control_notiAndchat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all .2s;
+            cursor: pointer;
+        }
+
+        &_notification {
+            @include control_notiAndchat;
+
+            &:hover {
+                background-color: var(--color-Grey-light-4);
+            }
+
+            &-icon {
+                @include control_icon;
+            }
+
+            &-value {
+                @include control_value;
+            }
+        }
+
+        &_chat {
+            @include control_notiAndchat;
+
+            &:hover {
+                background-color: var(--color-Grey-light-4);
+            }
+
+            &-icon {
+                @include control_icon;
+            }
+
+            &-value {
+                @include control_value;
+            }
+        }
+
+        &_user {
+            display: flex;
+            align-items: center;
+            gap: 0.1rem;
+            margin-left: 0.2rem;
+            &-img {
+                width: 0.4rem;
+                height: 0.4rem;
+
+                img {
+                    width: 100%;
+                    display: block;
+                    border-radius: 50%;
+                }
+            }
+
+            &-name {
+                display: flex;
+
+                span {
+                    font-size: 0.15rem;
+                    color: var(--color-Grey-dark-2);
+                }
+            }
+        }
+    }
+
+}
