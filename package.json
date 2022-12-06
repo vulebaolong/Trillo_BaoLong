@@ -4,7 +4,8 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "start": "sass sass/main.scss css/style.css --watch",
+    
+    "start": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
     "start1": "npm-run-all --parallel devserver watch:sass",
     
@@ -17,6 +18,8 @@
   "author": "Jonas",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.56.1"
+    "node-sass": "^8.0.0"
   }
 }
+
+

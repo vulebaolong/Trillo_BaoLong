@@ -72,10 +72,9 @@ body {
     font-family: var(--main-font);
     background-color: var(--color-Primary);
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    margin: 0.5rem 0;
 }
 
 .container {
@@ -88,7 +87,6 @@ body {
 .body {
     display: flex;
     align-items: stretch;
-    height: 80vh;
 }
 
 main {

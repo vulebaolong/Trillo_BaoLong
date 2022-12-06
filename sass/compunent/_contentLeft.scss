@@ -1,0 +1,72 @@
+.content_left {
+    background-color: white;
+    padding: 0.25rem;
+    flex: 1;
+    box-shadow: 0 0.08rem 0.25rem rgba(0, 0, 0, 0.08);
+
+    > :not(:last-child) {
+        border-bottom: 1px solid var(--color-Grey-light-4);
+    }
+
+    &_paragraph {
+
+        padding-bottom: 0.3rem;
+    }
+
+    &_list {
+        padding: 0.3rem 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.15rem;
+
+            &::before {
+                content: "";
+                height: 50%;
+                width: 0.2rem;
+                background-color: var(--color-Primary);
+                -webkit-mask-image: url(../img/chevron-thin-right.svg);
+                mask-image: url(../img/chevron-thin-right.svg);
+
+                -webkit-mask-size: cover;
+                mask-size: cover;
+
+                -webkit-mask-position: center;
+                mask-position: center;
+            }
+        }
+    }
+
+    &_recomment {
+        padding-top: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-text {
+            font-size: 0.13rem;
+            color: var(--color-Grey-dark-3);
+        }
+
+        &-imgs {
+            display: flex;
+            padding-right: 0.2rem;
+        }
+
+        &-img {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: -0.2rem;
+
+            img {
+                width: 100%;
+                border-radius: 50%;
+                border: 3px solid white;
+            }
+        }
+    }
+}
