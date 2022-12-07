@@ -48,7 +48,7 @@
         justify-content: space-between;
 
         &-text {
-            font-size: 0.13rem;
+            font-size: var(--fontsize-content_left_recomment-text);
             color: var(--color-Grey-dark-3);
         }
 
@@ -58,9 +58,9 @@
         }
 
         &-img {
-            width: 0.5rem;
-            height: 0.5rem;
-            margin-right: -0.2rem;
+            width: var(--wh-content_left_recomment-img);
+            height: var(--wh-content_left_recomment-img);
+            margin-right: var(--marginRight-content_left_recomment-img);
 
             img {
                 width: 100%;

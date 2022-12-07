@@ -16,6 +16,16 @@
 
     &-item {
         transition: all .2s;
+
+        &.active {
+
+            .nav-btn {
+                &::before {
+                    width: 100%;
+                    transform: scaleY(1);
+                }
+            }
+        }
     }
 
     &-btn {

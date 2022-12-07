@@ -7,36 +7,50 @@
     padding: 0.5rem 0;
 
     &-text {
-        font-size: 0.18rem;
+        font-size: var(--fontsize-cta-text);
         text-transform: uppercase;
     }
 
-    &-btn {
-        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.15);
+    a,
+    a:link,
+    a:visited {
+        box-shadow: 0 0.12rem 0.3rem rgba(0, 0, 0, 0.15);
         padding: 0.2rem 0.5rem;
         border-radius: 100rem;
         color: white;
         background-image: linear-gradient(to right, var(--color-Primary-light), var(--color-Primary-dark));
         transition: all .2s;
         position: relative;
+        backface-visibility: hidden;
         cursor: pointer;
 
-        &:hover {
-            background-image: linear-gradient(to right, var(--color-Primary-dark), var(--color-Primary-light));
+        &:active {
+            background-color: white;
+            outline: none;
+            border: none;
+            transform: translateY(0.05rem);
+        }
 
-            .cta-btn-text2 {
-                transform: translateY(0.5rem);
-                opacity: 0;
-            }
+        @media (hover: hover) {
 
-            .cta-btn-text1 {
-                top: 50%;
-                transform: translate(-50%, -50%);
-                opacity: 1;
+            /* when hover is supported */
+            &:hover {
+                background-image: linear-gradient(to right, var(--color-Primary-dark), var(--color-Primary-light));
+
+                .cta-btn-text2 {
+                    transform: translateY(0.5rem);
+                    opacity: 0;
+                }
+
+                .cta-btn-text1 {
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                }
             }
         }
 
-        &-text1 {
+        .cta-btn-text1 {
             text-transform: uppercase;
             transition: all .2s;
             position: absolute;
@@ -47,12 +61,24 @@
             opacity: 0;
         }
 
-        &-text2 {
+        @media (hover: none) {
+            .cta-btn-text1 {
+                display: none;
+            }
+        }
+
+        .cta-btn-text2 {
             display: inline-block;
             text-transform: uppercase;
             transition: all .2s;
         }
+    }
 
+    
 
+    a:focus {
+        background-color: white;
+        outline: none;
+        border: none;
     }
 }

@@ -1,7 +1,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    font-size: 0.14rem;
+    font-size: var(--fontsize-content);
     color: var(--color-Grey-dark-2);
 
     &_top {

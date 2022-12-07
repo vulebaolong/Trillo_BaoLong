@@ -31,26 +31,20 @@ Grey dark 3: #999
     --color-Grey-dark-3: #999;
 
     --main-font: 'Open Sans', sans-serif;
-    --font-size-h1: .72rem;
-    --font-size-h2: .36rem;
-    --font-size-h3: .28rem;
-    --font-size-h4: .2rem;
-    --font-size-sub-1: .16rem;
-    --font-size-sub-2: .14rem;
-    --font-size-sub-3: .12rem;
-    --font-size-sub-4: .12rem;
-    --font-size-desc1: .24rem;
-    --font-size-desc2: .16rem;
-    --font-size-desc3: .14rem;
-    --font-weight-1: 100;
-    --font-weight-2: 200;
-    --font-weight-3: 300;
-    --font-weight-4: 400;
-    --font-weight-5: 500;
-    --font-weight-6: 600;
-    --font-weight-7: 700;
-    --letter-spacing: normal;
-    --width-container: 12rem
+    --width-container: 13rem;
+
+    --width-control-icon: 0.8rem;
+    
+    --height-control-icon: 0.25rem;
+    
+    --wh-content_left_recomment-img: 0.5rem;
+    --wh-control-value: 0.2rem;
+
+    --fontsize-content: 0.14rem;
+    --fontsize-cta-text: 0.18rem;
+    --fontsize-content_left_recomment-text: 0.13rem;
+
+    --marginRight-content_left_recomment-img: -0.2rem;
 }
 
 
@@ -71,15 +65,12 @@ html {
 body {
     font-family: var(--main-font);
     background-color: var(--color-Primary);
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin: 0.5rem 0;
+    
 }
 
 .container {
     background-color: var(--color-Grey-dark-1);
-
+    margin: 0.5rem auto;
     width: var(--width-container);
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
 }
