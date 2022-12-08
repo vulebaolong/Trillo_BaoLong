@@ -60,12 +60,15 @@ Grey dark 3: #999
 html {
     // font-size: 6.94444vw;
     font-size: 6.54444vw;
+    width: 100%;
+    -webkit-text-size-adjust: none;
 }
 
 body {
     font-family: var(--main-font);
     background-color: var(--color-Primary);
-    
+    width: 100%;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
